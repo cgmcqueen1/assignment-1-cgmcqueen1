@@ -1,4 +1,154 @@
-/* This is your CSS files */
+
 body {
-    color: black
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.site-header {
+    background-color: #dc4c3e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 14px 24px;
+    color: #ffffff;
+}
+.navbar {
+    background-color: #fefbf2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    width: 300px;
+    flex-shrink: 0;
+}
+.nav-count {
+    color: #7e7d79; 
+    font-size: 12px;
+}
+.nav-item {
+    display: flex;         
+    align-items: center;   
+    gap: 12px;             
+    padding: 10px 20px;     
+}
+.nav-label {
+    flex: 1;      
+}
+.nav-icon {
+    width: 18px;           
+    height: 18px;
+}
+.site-main {
+    display: flex; 
+    flex: 1;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ececec;
+    margin: 0;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+
+.quick-find {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    padding: 9px 14px;
+    width: 100%;
+    max-width: 360px;
+}
+
+.quick-find .search-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+.quick-find input {
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+}
+
+.quick-find input::placeholder {
+    color: rgba(255, 255, 255, 0.85);
+}
+.main-content {
+    padding: 20px 40px;
+    flex: 1;
+}
+
+.main-content h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 16px;
+}
+
+.task-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding-top: 10px;
+}
+
+.task-item hr {
+    width: 100%;
+    margin-top: 10px;
+}
+.task-counter {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.task-check {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.task-check:checked { background-color: #dc4c3e; border-color: #dc4c3e; }
+
+@media (max-width: 480px) {
+
+    .navbar {
+        display: none;
+    }
 }

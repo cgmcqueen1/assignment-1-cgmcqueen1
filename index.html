@@ -1,9 +1,84 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Link your CSS file and other references here -->
+         <link rel="stylesheet" href="styles.css">
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <title>Task Manager</title>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="page">
         <!-- Content goes here -->
+         <header>
+            <div class="site-header">
+                <button class="menu-btn" type="button" aria-label="Toggle menu">
+                    <img src="assets/menu_icon.png" alt="">
+                </button>
+                <div class="quick-find">
+                    <img src="assets/search_icon.png" alt="" class="search-icon">
+                    <input type="text" name="quick-find" id="quick-find" placeholder="Quick find">
+                </div>
+                <div class="task-counter">
+                    <span class="check-badge">
+                        <img src="assets/check_icon.png" alt="">
+                    </span>
+                    <span>30/5</span>
+                </div>
+            </div>
+         </header>
+         <main class="site-main">
+            <aside class="navbar">
+                <nav aria-label="Task categories">
+                    <ul class="nav-list">
+                        <li class="nav-item is-active">
+                            <img src="assets/inbox_icon.png" alt="" class="nav-icon">
+                            <span class="nav-label">Inbox</span>
+                            <span class="nav-count">5</span>
+                        </li>
+                        <li class="nav-item">
+                            <img src="assets/calendar_icon.png" alt="" class="nav-icon">
+                            <span class="nav-label">Today</span>
+                            <span class="nav-count">5</span>
+                        </li>
+                        <li class="nav-item">
+                            <img src="assets/upcoming_icon.png" alt="" class="nav-icon">
+                            <span class="nav-label">Upcoming</span>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="main-content">
+                <h1>Inbox</h1>
+                <ul class="task-list">
+                    <li class="task-item">
+                        <input type="checkbox" id="task-1" class="task-check">
+                        <label for="task-1" class="task-name">Call Mom</label>
+                        <hr>
+                    </li>
+                    <li class="task-item">
+                        <input type="checkbox" id="task-2" class="task-check">
+                        <label for="task-2" class="task-name">Buy the new issue of Scientific American</label>
+                        <hr>
+                    </li>
+                    <li class="task-item">
+                        <input type="checkbox" id="task-3" class="task-check">
+                        <label for="task-3" class="task-name">Return the textbook to Josie</label>
+                        <hr>
+                    </li>
+                    <li class="task-item">
+                        <input type="checkbox" id="task-4" class="task-check">
+                        <label for="task-4" class="task-name">Buy the new album by Rake</label>
+                        <hr>
+                    </li>
+                    <li class="task-item">
+                        <input type="checkbox" id="task-5" class="task-check">
+                        <label for="task-5" class="task-name">Buy a gift card for Dad</label>
+                        <hr>
+                    </li>
+                </ul>
+
+            </section>
+         </main>
     </body>
 </html>
